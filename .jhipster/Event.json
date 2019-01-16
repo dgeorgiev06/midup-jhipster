@@ -1,0 +1,51 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [
+        {
+            "relationshipName": "eventOrganizer",
+            "otherEntityName": "userProfile",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "invitee",
+            "otherEntityName": "invitee",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "event"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "eventName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "eventDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "venueId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "address",
+            "fieldType": "String"
+        },
+        {
+          "fieldName": "venueName",
+          "fieldType": "String"
+        },
+        {
+          "fieldName": "imageUrl",
+          "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20181024155210",
+    "dto": "mapstruct",
+    "searchEngine": "elasticsearch",
+    "service": "serviceClass",
+    "entityTableName": "event",
+    "jpaMetamodelFiltering": true,
+    "pagination": "infinite-scroll"
+}

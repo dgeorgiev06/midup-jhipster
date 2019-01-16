@@ -1,0 +1,41 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [
+        {
+            "relationshipName": "friendRequesting",
+            "otherEntityName": "userProfile",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipName": "friendAccepting",
+            "otherEntityName": "userProfile",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id",
+            "ownerSide": true
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "status",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "friendshipRequestDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "friendshipStartDate",
+            "fieldType": "Instant"
+        }
+    ],
+    "changelogDate": "20181106015603",
+    "dto": "mapstruct",
+    "searchEngine": "elasticsearch",
+    "service": "serviceClass",
+    "entityTableName": "friend",
+    "jpaMetamodelFiltering": true,
+    "pagination": "infinite-scroll"
+}

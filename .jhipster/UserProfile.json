@@ -1,0 +1,63 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [
+        {
+            "relationshipName": "user",
+            "otherEntityName": "user",
+            "relationshipType": "one-to-one",
+            "otherEntityField": "login",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "userProfile"
+        },
+        {
+            "relationshipName": "requestingFriend",
+            "otherEntityName": "friend",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "friendRequesting"
+        },
+        {
+            "relationshipName": "acceptingFriend",
+            "otherEntityName": "friend",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "friendAccepting"
+        },
+        {
+            "relationshipName": "event",
+            "otherEntityName": "event",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "eventOrganizer"
+        },
+        {
+            "relationshipName": "invitee",
+            "otherEntityName": "invitee",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "userProfile"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "imageUrl",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "address",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "addressLongitude",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "addressLatitude",
+            "fieldType": "Double"
+        }
+    ],
+    "changelogDate": "20181024152620",
+    "dto": "mapstruct",
+    "searchEngine": "elasticsearch",
+    "service": "serviceClass",
+    "entityTableName": "user_profile",
+    "jpaMetamodelFiltering": true,
+    "pagination": "infinite-scroll"
+}

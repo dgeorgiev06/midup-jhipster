@@ -1,0 +1,41 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [
+        {
+            "relationshipName": "userProfile",
+            "otherEntityName": "userProfile",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "addressType",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "address",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isDefault",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "longitude",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "latitude",
+            "fieldType": "Double"
+        }
+    ],
+    "changelogDate": "20181024153838",
+    "dto": "mapstruct",
+    "searchEngine": "elasticsearch",
+    "service": "serviceClass",
+    "entityTableName": "profile_address",
+    "jpaMetamodelFiltering": true,
+    "pagination": "infinite-scroll"
+}

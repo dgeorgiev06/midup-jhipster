@@ -1,0 +1,33 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [
+        {
+            "relationshipName": "userProfile",
+            "otherEntityName": "userProfile",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "invitee"
+        },
+        {
+            "relationshipName": "event",
+            "otherEntityName": "event",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "eventName"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "status",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20181024160435",
+    "dto": "mapstruct",
+    "searchEngine": "elasticsearch",
+    "service": "serviceClass",
+    "entityTableName": "invitee",
+    "jpaMetamodelFiltering": true,
+    "pagination": "infinite-scroll"
+}

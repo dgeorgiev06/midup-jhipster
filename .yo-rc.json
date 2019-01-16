@@ -1,0 +1,32 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.bluehoodie.midup"
+    },
+    "jhipsterVersion": "5.5.0",
+    "applicationType": "monolith",
+    "baseName": "midup",
+    "packageName": "com.bluehoodie.midup",
+    "packageFolder": "com/bluehoodie/midup",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": "spring-websocket",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": "elasticsearch",
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "Zjg4YmQyZDYyZWZhMjM0N2FhN2IyMTVhYThlMmNiMTUxN2U2ZmVhZjA0ZDUzOTMxODc4ZWE4NzM0YTk3ZGVlYTI4ZTQ1ZmIwZTNjMjNmN2VjZGY2YjZiYjNlYWNiMjhkNjAwOGMyMDU4Y2ViYTEyNmZhMzM0OGRlM2UwMGZmMjE=",
+    "clientFramework": "react",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "enableTranslation": false
+  }
+}
